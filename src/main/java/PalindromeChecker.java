@@ -40,7 +40,7 @@ public boolean palindrome(String word)
   String a = new String("");
   int z = 0;
   for(int i = 0; i<word.length(); i++){
-    if(Character.isLetter(sString.charAt(i))){
+    if(Character.isLetter(word.charAt(i))){
       z++;}
   }
   if(z != word.length()){
