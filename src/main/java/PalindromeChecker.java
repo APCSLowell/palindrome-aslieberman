@@ -38,6 +38,7 @@ public void tester()
 public boolean palindrome(String word)
 {
   String a = new String("");
+  word = word.replaceAll(" ","");
   for(int i = 0; i<word.length(); i++){
     a=a+word.substring(word.length()-i-1,word.length()-i);
   }
@@ -48,6 +49,7 @@ public boolean palindrome(String word)
 public String reverse(String str)
 {
     String sNew = new String();
+    str = str.replaceAll(" ","");
     for(int i = 0; i<str.length(); i++){
       sNew=sNew+str.substring(str.length()-i-1,str.length()-i);
     }
